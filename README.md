@@ -12,3 +12,9 @@
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+## 🏆 GitHub Achievements
+<div style="display: flex; gap: 10px;">
+  <img src="https://github.githubassets.com/images/modules/profile/achievements/yolo-default.png" width="100" />
+  <img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-default.png" width="100" />
+</div>
