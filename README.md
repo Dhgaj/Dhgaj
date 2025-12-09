@@ -8,17 +8,9 @@
 - 👯 **Looking for**: Collaboration with innovative tech companies
 - 💬 **Ask me about**: Coding, university life, tech trends
 - 📫 **Contact**: [sifanlian@gmail.com](mailto:sifanlian@gmail.com)
+- 🛰️ **Blog**:[Fan's Docs](https://blog.liansifan.me)
 - 🌐 **Github.io**:[dhgaj.github.io](https://dhgaj.github.io)
 - 🌏 **Location**: China
-
----
-
-## 📈 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Dhgaj&show_icons=true&theme=radical" alt="Lian Sifan's GitHub stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Dhgaj&theme=radical" alt="GitHub Streak" />
-</p>
 
 ---
 
@@ -33,6 +25,7 @@
 <p align="center">
   <img src="https://github.githubassets.com/images/modules/profile/achievements/yolo-default.png" width="100" />
   <img src="https://github.githubassets.com/images/modules/profile/achievements/pull-shark-default.png" width="100" />
+  <img src="https://github.githubassets.com/images/modules/profile/achievements/quickdraw-default.png" width="100" />
 </p>
 
 ---
