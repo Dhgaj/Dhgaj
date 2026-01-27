@@ -40,7 +40,11 @@
 ## 📊 Coding Activity
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Dhgaj/Dhgaj/output/github-contribution-grid-snake-fire.svg" alt="Snake animation" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Dhgaj/Dhgaj/raw/output/dist/github-contribution-grid-snake-fire.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/Dhgaj/Dhgaj/raw/output/dist/github-contribution-grid-snake-light.svg">
+  <img alt="github contribution grid snake animation" src="https://github.com/Dhgaj/Dhgaj/raw/output/dist/github-contribution-grid-snake-light.svg">
+</picture>
 </p>
 
 <p align="center">
