@@ -46,6 +46,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   update-readme:
+    needs: generate
     runs-on: ubuntu-latest
     permissions:
       contents: write
