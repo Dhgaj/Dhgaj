@@ -15,6 +15,8 @@ on:
 
 jobs:
   generate:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
@@ -27,6 +29,9 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake-dimmed.svg?color_snake=#a685e2&color_dots=#2d333b,#4e336e,#71459a,#9456c6,#b768f2
+            dist/github-contribution-grid-snake-ocean.svg?color_snake=#00c8ff&color_dots=#161b22,#0d1117,#0e4429,#006d32,#26a641
+            dist/github-contribution-grid-snake-fire.svg?color_snake=#ff8c00&color_dots=#161b22,#0d1117,#3f1b1b,#7c2d2d,#b83e3e
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -38,3 +43,25 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Update Date Badge
+        run: |
+          # 获取当前日期，格式为 shields.io 需要的双破折号 (YYYY--MM--DD)
+          TODAY=$(date +'%Y--%m--%d')
+
+          # 替换 README 中的日期
+          sed -i "s/badge\/-[0-9]\{4\}--[0-9]\{2\}--[0-9]\{2\}-success/badge\/-$TODAY-success/g" README.md
+
+          # 如果有变化则提交并推送
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "docs: 自动更新每日日期徽章" || echo "没有变更需要提交"
+          git push
