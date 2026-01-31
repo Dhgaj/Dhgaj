@@ -1,0 +1,19 @@
+name: Latest Blog Post
+
+on:
+  schedule:
+    # Run at 00:00 on Monday
+    - cron: "0 0 * * 1"
+  workflow_dispatch:
+
+jobs:
+  update-readme-with-blog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          # Check both main domain and pages.dev mirror, try both rss.xml and atom.xml
+          feed_list: "https://blog.liansifan.me/rss.xml,https://blog.liansifan.me/atom.xml,https://fans-docs.pages.dev/rss.xml"
+          max_post_count: 5
+          template: "- [$title]($url)"

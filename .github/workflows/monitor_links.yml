@@ -1,0 +1,39 @@
+name: Monitor Links
+
+on:
+  schedule:
+    # Run at 00:00 on Monday check
+    - cron: "0 0 * * 1"
+  workflow_dispatch:
+
+jobs:
+  check-health:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check GitHub Stats Mirror
+        run: |
+          echo "Checking GitHub Readme Stats..."
+          curl --fail -I "https://github-readme-stats-sigma-five.vercel.app/api?username=Dhgaj"
+
+      - name: Check Snake Animation
+        run: |
+          echo "Checking Snake Animation..."
+          # Assuming the snake is on the output branch, check the raw URL
+          curl --fail -I "https://raw.githubusercontent.com/Dhgaj/Dhgaj/output/github-contribution-grid-snake.svg"
+
+      - name: Send Bark Notification on Failure
+        if: failure()
+        run: |
+          # Send notification to Bark if any previous step failed
+            # Requires BARK_KEY and optional BARK_SERVER (default: https://api.day.app)
+            if [ -n "${{ secrets.BARK_KEY }}" ]; then
+              BARK_HOST="${{ secrets.BARK_SERVER }}"
+              if [ -z "$BARK_HOST" ]; then
+                BARK_HOST="https://api.day.app"
+              fi
+              # Ensure host doesn't end with slash
+              BARK_HOST=${BARK_HOST%/}
+              curl "$BARK_HOST/${{ secrets.BARK_KEY }}/GitHub监控报警/Stats或Snake链接访问失败，请检查项目?"
+          else
+            echo "BARK_KEY secret not found. Skipping notification."
+          fi

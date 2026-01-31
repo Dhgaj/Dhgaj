@@ -31,8 +31,8 @@
 ## 📈 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Dhgaj&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000" alt="Dhgaj's GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dhgaj&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000" alt="Top Languages" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=Dhgaj&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000" alt="Dhgaj's GitHub Stats" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Dhgaj&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000" alt="Top Languages" />
 </div>
 
 ---
@@ -54,6 +54,13 @@
   </a>
   <img src="https://img.shields.io/badge/-2026--01--31-success?style=for-the-badge&logo=clock&logoColor=white" alt="Current Date" />
 </p>
+
+---
+
+## 📰 Latest Blog Posts
+
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
 
 ---
 
