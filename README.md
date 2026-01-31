@@ -59,8 +59,7 @@
 
 ## 📰 Latest Blog Posts
 
-<!-- BLOG-POST-LIST:START -->
-<!-- BLOG-POST-LIST:END -->
+<!-- BLOG-POST-LIST:START -->- [Docker 安装指南：Windows、macOS、Linux 全平台教程](https://fans-docs.pages.dev/blog/docker-installation-guide/)- [欢迎来到我的博客](https://fans-docs.pages.dev/blog/welcome/)<!-- BLOG-POST-LIST:END -->
 
 ---
 
