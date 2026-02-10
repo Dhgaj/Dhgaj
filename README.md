@@ -60,6 +60,7 @@
 ## 📰 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
+- [多仓库合并至 Mono-Repo 的实践指南](https://fans-docs.pages.dev/blog/merge-multiple-repos-into-mono-repo/)
 - [Docker 安装指南：Windows、macOS、Linux 全平台教程](https://fans-docs.pages.dev/blog/docker-installation-guide/)
 - [欢迎来到我的博客](https://fans-docs.pages.dev/blog/welcome/)<!-- BLOG-POST-LIST:END -->
 
