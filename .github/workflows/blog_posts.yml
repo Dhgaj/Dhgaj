@@ -16,7 +16,7 @@ jobs:
         continue-on-error: true
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
-          feed_list: "https://blog.liansifan.me/rss.xml,https://blog.liansifan.me/atom.xml"
+          feed_list: "https://blog.liansifan.com/rss.xml,https://blog.liansifan.com/atom.xml"
           max_post_count: 5
           template: "$newline- [$title]($url)"
 
